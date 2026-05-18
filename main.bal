@@ -1,6 +1,8 @@
 import ballerina/mcp;
 
-listener mcp:Listener mcpListener = new (8080);
+configurable int port = ?;
+
+listener mcp:Listener mcpListener = new (port);
 
 @mcp:ServiceConfig {
     info: {
