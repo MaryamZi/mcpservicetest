@@ -1,6 +1,6 @@
 import ballerina/mcp;
 
-configurable int port = ?;
+configurable int port = 8080;
 
 listener mcp:Listener mcpListener = new (port);
 
